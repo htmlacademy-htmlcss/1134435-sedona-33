@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Гостиницы Седоны</title>
   </head>
   <body>
     <header class="page-header">
@@ -87,23 +87,27 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="type-house" checked>
+                        <input class="control-input" type="radio" name="product-group" value="hotel" checked>
                         Гостиница
                     </label>
                     <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="type-house">
+                        <input class="control-input" type="radio" name="product-group" value="motel">
                         Мотель
                     </label>
                     <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="type-house">
+                        <input class="control-input" type="radio" name="product-group" value="apartment">
                         Апартаменты
                     </label>
                 </li>
                   </ul> 
             </fieldset>
             <button class="button" type="submit">Применить</button>
-                <a class="no-filter" href="#">Сбросить</a>
+            <button class="button" type="reset">Сбросить</button>
               </form>
+
+             <span class="results-all">Найдено гостиниц: 38</span>
+
+            
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
@@ -131,10 +135,10 @@
                       <h3 class="product-card-title">Amara Resort & Spa</h3>
                     </a>
                     <span class="catalog-type-hotels">Гостиница</span>
-                    <b class="product-card-price">От 4000 ₽</b>
+                    <p class="product-card-price">От 4000 ₽</p>
                     <a class="product-card-about button" href="#">Подробнее</a>
                     <button class="button" type="submit">В избранное</button>
-                    <span class="visually-hidden">&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="visually-hidden">4 звезды</span>
                     <span class="hotel-rating">Рейтинг: 8,5</span>
                 </article>
               </li>
@@ -147,10 +151,10 @@
                       <h3 class="product-card-title">Desert Quail Inn</h3>
                     </a>
                     <span class="catalog-type-hotels">Гостиница</span>
-                    <b class="product-card-price">От 3000 ₽</b>
+                    <p class="product-card-price">От 3000 ₽</p>
                     <a class="product-card-about button" href="#">Подробнее</a>
                     <button class="button" type="submit">В избранное</button>
-                    <span class="visually-hidden">&#9733;&#9733;&#9733;</span>
+                    <span class="visually-hidden">3 звезды</span>
                     <span class="hotel-rating">Рейтинг: 8,9</span>
                 </article>
               </li>
@@ -162,10 +166,10 @@
                       <h3 class="product-card-title">Villas at Poco Diablo</h3>
                     </a>
                     <span class="catalog-type-hotels">Гостиница</span>
-                    <b class="product-card-price">От 2000 ₽</b>
+                    <p class="product-card-price">От 2000 ₽</p>
                     <a class="product-card-about button" href="#">Подробнее</a>
                     <button class="button" type="submit">В избранном</button>
-                    <span class="visually-hidden">&#9733;&#9733;</span>
+                    <span class="visually-hidden">2 звезды</span>
                     <span class="hotel-rating">Рейтинг: 9,2</span>
                 </article>
               </li>
@@ -177,23 +181,18 @@
                       <h3 class="product-card-title">GreenTree Inn</h3>
                     </a>
                     <span class="catalog-type-hotels">Гостиница</span>
-                    <b class="product-card-price">От 3000 ₽</b>
+                    <p class="product-card-price">От 3000 ₽</p>
                     <a class="product-card-about button" href="#">Подробнее</a>
                     <button class="button" type="submit">В избранное</button>
-                    <span class="visually-hidden">&#9733;&#9733;</span>
+                    <span class="visually-hidden">2 звезды</span>
                     <span class="hotel-rating">Рейтинг: 9,2</span>
                   </article>
                   </li>
               </ul>
                 </section>
 
-
+                <button class="button pagination-show-more" type="button">Загрузить ещё</button>
                   <ul class="pagination">
-                    <li class="pagination-item">
-                      <a class="pagination-link pagination-prev pagination-disabled">
-                        <span class="visually-hidden">Предыдущая страница</span>
-                      </a>
-                    </li>
                     <li class="pagination-item">
                       <a class="pagination-link pagination-current">1</a>
                     </li>
@@ -215,7 +214,9 @@
                       </a>
                     </li>
                   </ul>
-                  <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+                  <span class="view-item">Гостиниц на странице:</span>
+                    <button class="select-view">4</button>
+               
           </section>
         </main>
         <footer class="page-footer">
