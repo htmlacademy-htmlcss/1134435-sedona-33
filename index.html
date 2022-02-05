@@ -32,16 +32,14 @@
           </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <button class="navigation-show" type="button">
               <span class="visually-hidden">
                 Избранное
               </span>
-            </a>
+            </button>
           </li>
         </ul>
-          <li class="navigation-item">
             <button class="navigation-show" type="button">Хочу сюда</button>
-          </li>
       </nav>
     </header>
       <main class="main-index">
@@ -53,16 +51,15 @@
           <p class="reasons-top">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
           <ol class="reasons-list">
             <li class="reasons-first">
-              <h3 class="first-reasons-title">Настоящий
+              <h3 class="reasons-title">Настоящий
              <br> городок</h3>
-             <span class="first">— №1 —</span>
-              <p class="first-reasons-description">Седона — не аттракцион для туристов, там течёт 
+             <span>— №1 —</span>
+              <p class="reasons-description">Седона — не аттракцион для туристов, там течёт 
               <br> своя жизнь</p>
               <img class="first-reasons" src="" width="800" height="384" alt="фото гостиницы">
               <ul class="advices-list">
-                <h4 class="visually-hidden">Советы</h4>
                 <li class="services-item">
-                  <h3 class="advices-title-home">Жильё</h3>
+                  <h4 class="advices-title-home">Жильё</h4>
                   <span class="advices-home">Рекомендуем пожить 
                   <br>в настоящем мотеле, 
                   <br>всё как в кино!</span>
@@ -79,42 +76,41 @@
                 </li>
               </ul>
             </li>
-            <li class="reasons-second">
-              <h3 class="second-reasons-title">Там есть
+            <li class="reasons">
+              <h3 class="reasons-title">Там есть
               <br>мост дьявола</h3>
-              <span class="second">— №2 —</span>
-              <p class="second-reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img class="second-reasons" src="" width="800" height="384" alt="фото моста" >
+              <span>— №2 —</span>
+              <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <img class="reasons" src="" width="800" height="384" alt="фото моста">
              </li> 
-            <li class="reasons-third">
-              <h3 class="third-reasons-title">Небольшая
+            <li class="third-reasons">
+              <h3 class="reasons-title">Небольшая
               <br>площадь</h3>
-              <span class="third">— №3 —</span>
-              <p class="third-reasons-description">Все достопримечательности 
+              <span>— №3 —</span>
+              <p class="reasons-description">Все достопримечательности 
               <br>находятся очень близко</p>
             </li>
-            <li class="reasons-fourth">
-              <h3 class="fourth-reasons-title">Красивая
+            <li class="reason">
+              <h3 class="reasons-title">Красивая
               <br>дорога</h3>
-              <span class="fourth">— №4 —</span>
-              <p class="fourth-reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <span>— №4 —</span>
+              <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="reasons-fifth">
-              <h3 class="fifth-reasons-title">Мало
+            <li class="reasons">
+              <h3 class="reasons-title">Мало
               <br>туристов</h3>
-              <span class="fifth">— №5—</span>
-              <p class="fifth-reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
+              <span>— №5—</span>
+              <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ol>
         </section>
         
         <section class="appointment">
-          <h2 class="appointment-title">Заинтересовались?</h2>
-          <p class="appointment">Укажите предполагаемые даты поездки,
+          <h2 class="visually-hidden">Посмотреть лучшие гостиницы</h2>
+          <p class="appointment-title">Заинтересовались?</p>
+          <p class="appointment-text">Укажите предполагаемые даты поездки,
           <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <button class="button" type="submit">ПОИСК ГОСТИНИЦЫ В седоне</button>
-          </form>
+          <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
         </section>
       </main>
         <footer class="page-footer">
@@ -124,11 +120,9 @@
           <p class="subscription">Только полезная информация и никакого спама,
           <br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email"></label>
+          <label for="newsletter-email">Подписаться</label>
           <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
-          </button>
+          <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
         </section>
         <section class="footer-social">
