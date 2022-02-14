@@ -29,7 +29,15 @@
     font-display: swap;
   }
 
+  html {
+    height: 100%;
+  }
+
   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -42,6 +50,19 @@
     background-color: #000000;
   }
 
+  .navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navigation-list {
+    width: 430px;
+    margin: 0;
+    padding: 0;
+  }
+
+
   .navigation-link {
     font-weight: 700;
     line-height: 26px;
@@ -50,6 +71,20 @@
   background-color: #000000;
   text-decoration: none;
   text-transform: uppercase; 
+  }
+
+  .navigation-logo {
+    width: 139px;
+    margin-right: 47px;
+  }
+
+    .navigation-user {
+      max-width: 300px;
+      margin-left: auto;
+    }
+
+  .main-container {
+    flex-grow: 1;
   }
   
   .main-index {
@@ -60,6 +95,17 @@
     background-repeat: no-repeat;
   }
 
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+
 
   .reasons-title {
     font-size: 24px;
@@ -67,6 +113,17 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+
+
+  .reasons-list li {
+    width: 400px;
+    display: block;
+    flex-direction: row;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+  }
+
 
   .button {
     font-family: inherit;
@@ -88,17 +145,45 @@
   }
 
 
+  .appointment {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
 
 .contacts {
   font-weight: 700;
 }
 
+.subscription {
+  width: 800px;
+  margin: 0 auto;
+}
 
-footer-contacts {
+.footer-social {
+  width: 137px;
+  margin-left: 72px;
+  margin-right: 31px;
+}
+
+.footer-contacts {
+  width: 720px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.about-text {
+  width: 115px;
+  margin-right: 72px;
+  margin-left: auto;
 }
 
 .button newsletter-button {
@@ -111,8 +196,6 @@ footer-contacts {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-.appointment button
 
 
 .inner-header-title {
@@ -128,6 +211,20 @@ footer-contacts {
 
 .breadcrumbs-link {
   color: inherit;
+}
+
+.catalog-products {
+display: flex;
+}
+
+.catalog-filter {
+width: 1057px;
+margin-left: 72px;
+margin-right: 72px;
+}
+
+.catalog-right-column {
+width: 1056px;
 }
 
 .catalog-filter-title {

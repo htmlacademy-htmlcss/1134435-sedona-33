@@ -44,7 +44,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
+      <div class="page-container">
         <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <img class="footer-contacts-logo" src="images/catalog-background1.jpg" width="1200" height="408" alt="Фон для фильтра">
@@ -60,7 +61,7 @@
               </ul>
           </header>
           <section class="catalog-products">
-            <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+            <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -106,6 +107,8 @@
             </section>
              <span class="results-all">Найдено гостиниц: 38</span>
 
+             
+             <div class="catalog-right-column">
              <div class="sorting-container">
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешёвые</option>
@@ -186,6 +189,7 @@
                   </article>
                   </li>
               </ul>
+              </div>
                 </section>
 
                 <button class="button pagination-show-more" type="button">Загрузить ещё</button>
@@ -216,6 +220,7 @@
                     <option value="8">Сначала дорогие</option>
                     <option value="16">Сначала популярные</option>
                 </select>
+              </div>
         </main>
         <footer class="page-footer">
 
@@ -231,6 +236,7 @@
               </button>
             </form>
             </section>
+            <div class="page-footer-container">
             <section class="footer-social">
               <ul class="footer-social-list">
                 <li class="footer-social-item">
@@ -256,6 +262,7 @@
                 </p>
               <p class="about-text">Сделано в<a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
               <img class="htmlacademy-logo" src="images/logo-htmlacademy.svg" width="115" height="34"  alt="логотип html academy">
+            </div>
          </footer>
       </body>
     </html>
