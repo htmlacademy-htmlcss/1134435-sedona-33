@@ -41,13 +41,12 @@
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
   }
 
   .page-header {
-    color: #ffffff;
-    background-color: #000000;
+    color: #000000;
+    background-color: #ffffff;
   }
 
   .navigation {
@@ -64,13 +63,13 @@
 
 
   .navigation-link {
+    font-size: 20px;
     font-weight: 700;
     line-height: 26px;
     text-align: center;
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
   text-decoration: none;
-  text-transform: uppercase; 
+  text-transform: initial; 
   }
 
   .navigation-logo {
@@ -88,8 +87,8 @@
   }
   
   .main-index {
-    color: #ffffff;
-    background-color: #000000;
+    color: #000000;
+    background-color: #ffffff;
     background-image: url("images/background-image.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -115,14 +114,128 @@
   }
 
 
-  .reasons-list li {
+  .first {
+    color: #ffffff;
+    background-color: #83B3D3;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex
     width: 400px;
-    display: block;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
     flex-direction: row;
-    justify-content:center;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
   }
+
+  .home {
+    color: #000000;
+    background-color: #83B3D3;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .food {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .souvenirs {
+    color: #000000;
+    background-color: #83B3D3;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+
+  .second {
+    color: #ffffff;
+    background-color: #83B3D3;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+
+  .third {
+    color: #ffffff;
+    background-color: #83B3D3;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+.fourth {
+    color: #ffffff;
+    background-color: #83B3D3;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+
+.fifth {
+  color: #ffffff;
+    background-color: #83B3D3;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 0 auto;
+}
 
 
   .button {
@@ -133,7 +246,6 @@
     text-align: center;
     color: #ffffff;
     background-color: #83B3D3;
-    text-decoration: none;
     text-transform: uppercase;
   }
 
@@ -142,13 +254,27 @@
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+  }
+
+  .reasons-top {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
   }
 
 
   .appointment {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 0;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    display: inline;
+    align-items: stretch;
   }
+
 
   .page-footer-container {
     display: flex;
@@ -162,7 +288,8 @@
 }
 
 .subscription {
-  width: 800px;
+  display: flex;
+  width: 1200px;
   margin: 0 auto;
 }
 
