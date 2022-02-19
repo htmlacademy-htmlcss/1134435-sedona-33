@@ -8,6 +8,7 @@
     <base href="https://htmlacademy-htmlcss.github.io/1134435-sedona-33/3/">
 </head>
   <body>
+    <div class="container-main">
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -35,11 +36,9 @@
           </a>
           </li>
           <li class="navigation-item">
-            <button class="navigation-show" type="button">
                 <span class="visually-hidden">
                   Избранное
                 </span>
-              </button>
               <div class="navigation-favorite">12</div>
             </li>
             <li class="navigation-item">
@@ -57,75 +56,65 @@
           <br> заслуживающий большего!</h2>
           <p class="reasons-top">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
           <ol class="reasons-list">
-            
-            <li class="reasons-first">
-              <div class="first">
+            <li class="first">
+              <div class="first-reason">
               <h3 class="reasons-title">Настоящий
              <br> городок</h3>
              <span>— №1 —</span>
               <p class="reasons-description">Седона — не аттракцион для туристов, там течёт 
               <br> своя жизнь</p> 
+             <img class="first-reasons" src="images/photo-1.jpg" width="800" height="384" alt="фото гостиницы">
             </div>
-              <img class="first-reasons" src="images/photo-1.jpg" width="800" height="384" alt="фото гостиницы">
               <ul class="advices-list">
-                <div class="home">
-                <li class="services-item">
+              <li class="home"> 
                   <h4 class="advices-title-home">Жильё</h4>
                   <span class="advices-home">Рекомендуем пожить 
                   <br>в настоящем мотеле, 
                   <br>всё как в кино!</span>
-                </li>
-              </div>
-              <div class="food">
-                <li class="services-item">
+              </li>
+              <li class="food"> 
                   <h4 class="advices-title-food">Еда</h4>
                   <span class="advices-food">Всегда заказывайте
                 <br>топовый фирменный бургер, вы не разочаруетесь!</span>
-                </li>
-              </div>
-              <div class="souvenirs">
-                <li class="services-item">
+              </li>
+              <li class="souvenirs"> 
                   <h4 class="advices-title-souvenirs">Сувениры</h4>
                   <span class="advices-souvenirs">Не только китайского, 
                 <br>но и настоящего местного производства!</span>
-                </li>
-              </div>
+              </li>
               </ul>
-            </li>
-            <div class="second">
-            <li class="reasons">
+              </li>
+
+            <li class="second">
               <h3 class="reasons-title">Там есть
               <br>мост дьявола</h3>
               <span>— №2 —</span>
               <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               <img class="reasons" src="images/photo-2.jpg" width="800" height="384" alt="фото моста">
              </li> 
-            </div>
-            <div class="third">
-            <li class="third-reasons">
+            
+            <li class="third">
               <h3 class="reasons-title">Небольшая
               <br>площадь</h3>
               <span>— №3 —</span>
               <p class="reasons-description">Все достопримечательности 
               <br>находятся очень близко</p>
             </li>
-          </div>
-          <div class="fourth" >
-            <li class="reason">
+            
+          <li class="fourth">
               <h3 class="reasons-title">Красивая
               <br>дорога</h3>
               <span>— №4 —</span>
               <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-          </div>
-          <div class="fifth">
-            <li class="reasons">
+          
+          <li class="fifth">
               <h3 class="reasons-title">Мало
               <br>туристов</h3>
               <span>— №5—</span>
               <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-          </div>
+          
           </ol>
         </section>
       </div>
@@ -149,7 +138,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Подписаться</label>
           <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
+          <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
         </section>
         <div class="page-footer-container"> 
@@ -173,11 +162,12 @@
             </section>
               <p class="footer-contacts">
                 <span class="visually-hidden">Телефон</span>
-                <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <a class="footer-contacts-phone" href="tel:+78128121212" style="text-decoration: none">+7 (812) 812-12-12</a>
               </p>
-            <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-          <img class="htmlacademy-logo" src="images/logo-htmlacademy.svg" width="115" height="34"  alt="логотип html academy">
+            <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/"> html academy</a></p>
+          <a class="htmlacademy-logo" src="images/logo-htmlacademy.svg" width="115" height="34"  alt="логотип html academy">
         </div>
       </footer>
+    </div>
     </body>
   </html>
