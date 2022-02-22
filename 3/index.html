@@ -45,54 +45,58 @@
               <button class="navigation-show" type="button">ХОЧУ СЮДА!</button>
             </li>
           </ul>
-        </nav>
+      </nav>
     </header>
       <main class="main-container main-index">
         <div class="page-container">
-        <h1 class="visually-hidden">Гостиница "Седона"</h1>
-        <img class="logo" src="images/index-background.jpg" width="1200" height="485"  alt="Логотип Гостиницы «Седона».">
-        <section class="advantages">
+          <div class="promo"> 
+            <h1 class="visually-hidden">Гостиница "Седона"</h1>
+           <img class="logo" src="images/welcome.svg" width="458" height="352"  alt="Логотип Гостиницы «Седона».">
+          <section class="advantages">
+          </div>
           <h2 class="main-title">Седона — небольшой городок в Аризоне,
           <br> заслуживающий большего!</h2>
           <p class="reasons-top">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
           <ol class="reasons-list">
-            <li class="first">
-              <div class="first-reason">
-              <h3 class="reasons-title">Настоящий
-             <br> городок</h3>
-             <span>— №1 —</span>
-              <p class="reasons-description">Седона — не аттракцион для туристов, там течёт 
-              <br> своя жизнь</p> 
+            <li class="first-wrapper">
+              <div class="first">  
+                <h3 class="reasons-title reason-block">Настоящий
+                  <br> городок</h3>
+                  <span>— №1 —</span>
+                   <p class="reasons-description">Седона — не аттракцион для туристов, там течёт 
+                   <br> своя жизнь</p> 
+               </div>
              <img class="first-reasons" src="images/photo-1.jpg" width="800" height="384" alt="фото гостиницы">
-            </div>
               <ul class="advices-list">
               <li class="home"> 
-                  <h4 class="advices-title-home">Жильё</h4>
+                  <h4 class="advices-title">Жильё</h4>
                   <span class="advices-home">Рекомендуем пожить 
                   <br>в настоящем мотеле, 
                   <br>всё как в кино!</span>
               </li>
               <li class="food"> 
-                  <h4 class="advices-title-food">Еда</h4>
+                  <h4 class="advices-title">Еда</h4>
                   <span class="advices-food">Всегда заказывайте
                 <br>топовый фирменный бургер, вы не разочаруетесь!</span>
               </li>
               <li class="souvenirs"> 
-                  <h4 class="advices-title-souvenirs">Сувениры</h4>
+                  <h4 class="advices-title">Сувениры</h4>
                   <span class="advices-souvenirs">Не только китайского, 
                 <br>но и настоящего местного производства!</span>
               </li>
               </ul>
               </li>
 
-            <li class="second">
-              <h3 class="reasons-title">Там есть
-              <br>мост дьявола</h3>
-              <span>— №2 —</span>
-              <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <li class="second-wrapper">
+              <div class="second"> 
+                <h3 class="reasons-title reason-block">Там есть
+                  <br>мост дьявола</h3>
+                  <span>— №2 —</span>
+                  <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
               <img class="reasons" src="images/photo-2.jpg" width="800" height="384" alt="фото моста">
              </li> 
-            
+
             <li class="third">
               <h3 class="reasons-title">Небольшая
               <br>площадь</h3>
@@ -125,22 +129,21 @@
           <p class="appointment-title">Заинтересовались?</p>
           <p class="appointment-text">Укажите предполагаемые даты поездки,
           <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+          <button type="button" class="search-hotel">ПОИСК ГОСТИНИЦЫ В седоне</button>
         </section>
       </div>
       </main>
-        <footer class="page-footer">
-        <section class="subscription">
+      <footer class="page-footer"> 
+        <div class="subscription-footer-index">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-          <img class="footer-contacts-logo" src="images/background.jpg" width="1200" height="411" alt="Фон для подписки">
           <p class="subscription">Только полезная информация и никакого спама,
           <br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Подписаться</label>
-          <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
-        </form>
-        </section>
+           <label for="newsletter-email">Подписаться</label>
+           <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+           <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
+         </form>
+        </div>
         <div class="page-footer-container"> 
         <section class="footer-social">
           <ul class="footer-social-list">
@@ -156,18 +159,18 @@
             </li>
             <li class="footer-social-item">
               <a class="button" href="#">
-                <span class="visually-hidden">Ютюб</span></a>
-              </li>
-            </ul>
-            </section>
-              <p class="footer-contacts">
-                <span class="visually-hidden">Телефон</span>
-                <a class="footer-contacts-phone" href="tel:+78128121212" style="text-decoration: none">+7 (812) 812-12-12</a>
-              </p>
-            <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/"> html academy</a></p>
-          <a class="htmlacademy-logo" src="images/logo-htmlacademy.svg" width="115" height="34"  alt="логотип html academy">
+               <span class="visually-hidden">Ютюб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+            <p class="footer-contacts">
+              <span class="visually-hidden">Телефон</span>
+              <a class="footer-contacts-phone" href="tel:+78128121212" style="text-decoration: none">+7 (812) 812-12-12</a>
+            </p>
+            <p class="about-text">Сделано в 
+              <a class="htmlacademy-link" href="https://htmlacademy.ru/"> <img class="htmlacademy-logo" src="images/logo-htmlacademy.svg" width="115" height="34"  alt="логотип html academy"></a></p>
         </div>
       </footer>
-    </div>
-    </body>
+  </body>
   </html>
