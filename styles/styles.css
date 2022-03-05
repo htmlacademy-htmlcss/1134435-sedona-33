@@ -32,6 +32,19 @@ color: #333333;
 padding: 0;
 }
 
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+border: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+
 .container-main {
 width: 1200px;
 margin-left: auto;
@@ -59,12 +72,17 @@ margin: 0 auto;
 
 
 .navigation-list {
-width: 430px;
+display: flex;
+flex-wrap: wrap; 
+width: 700px;
 margin: 0;
 padding: 0;
+list-style-type: none;
 }
 
 .navigation-link {
+display: block;
+padding: 20px 19px;
 font-size: 20px;
 font-weight: 700;
 line-height: 26px;
@@ -90,12 +108,18 @@ color: #ffffff;
 background-color: #756257;
 border: 0;
 border-radius: 4px;
+margin-top: 13px;
 }
 
 
 .navigation-user {
 max-width: 300px;
 margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+min-width: 18px;
+min-height: 18px;
 }
 
 .main-container {
@@ -111,10 +135,15 @@ margin: 0 auto;
 .logo {
 display: block;
 margin: 0 auto;
+padding-top: 51px;
+padding-bottom: 83px;
 }
 
 
 .reasons-title {
+padding-top: 98px; 
+margin-top: 0;
+margin-bottom: 29px;
 font-size: 24px;
 line-height: 28px;
 color: #000000;
@@ -162,8 +191,8 @@ color: #ffffff;
 background-color: #83B3D3;
 font-size: 18px;
 line-height: 21px;
-font-weight: 400;
 width: 400px;
+height: 384px;
 text-align: center;
 }
 
@@ -179,6 +208,13 @@ width: 400px;
 margin: 0 0;
 }
 
+.advices-home {
+display: flex;
+justify-content: center;
+margin-bottom: 79px;
+}
+
+
 .food {
 color: #333333;
 background-color: #ffffff;
@@ -189,6 +225,14 @@ width: 400px;
 text-align: center;
 margin: 0 0;
 }
+
+
+.advices-food {
+display: flex;
+justify-content: center;
+margin-bottom: 79px;
+}
+
 
 .souvenirs {
 color: #333333;
@@ -201,6 +245,11 @@ text-align: center;
 margin: 0 0;
 }
 
+advices-souvenirs {
+display: flex;
+justify-content: center;
+margin-bottom: 79px;
+}
 
 .second-wrapper {
 display: flex;
@@ -212,8 +261,8 @@ color: #ffffff;
 background-color: #83B3D3;
 font-size: 18px;
 line-height: 21px;
-font-weight: 400;
 width: 400px;
+height: 384px;
 text-align: center;
 }
 
@@ -248,6 +297,12 @@ width: 400px;
 text-align: center;
 }
 
+.reasons-description {
+display: flex;
+margin-bottom: 136px;
+justify-content: center;
+}
+
 .button {
 font-family: inherit;
 font-size: 20px;
@@ -264,6 +319,9 @@ line-height: 36px;
 font-weight: 700;
 text-transform: uppercase;
 text-align: center;
+padding-top: 63px;
+color: #000000;
+margin: 0;
 }
 
 .reasons-top {
@@ -271,6 +329,9 @@ font-size: 22px;
 font-weight: 400;
 line-height: 36px;
 text-align: center;
+padding-bottom: 80px;
+margin-top: 31px;
+margin-bottom: 0;
 }
 
 
@@ -291,6 +352,8 @@ line-height: 36px;
 text-align: center;
 color: #000000;
 text-transform: uppercase;
+margin-top: 91px;
+margin-bottom: 0;
 }
 
 
@@ -299,6 +362,9 @@ font-size: 22px;
 line-height: 26px;
 text-align: center;
 color: #333333;
+padding-top: 29px;
+padding-bottom: 56px;
+margin: 0;
 }
 
 
@@ -320,6 +386,7 @@ border-radius: 10px;
 border: 0;
 text-transform: uppercase;
 font-family: inherit;
+margin-bottom: 93px;
 }
 
 .contacts {
@@ -351,6 +418,8 @@ font-weight: 400;
 line-height: 26px;
 color: #ffffff;
 text-align:center;
+margin-top: 29px;
+margin-bottom: 46px;
 }
 
 
@@ -360,6 +429,8 @@ line-height: 36px;
 font-weight: 700;
 color: #ffffff;
 text-transform: uppercase;
+padding-top: 94px;
+margin: 0;
 }
 
 .subscription-title-hotel {
@@ -377,6 +448,8 @@ margin-right: 31px;
 }
 
 .footer-contacts {
+padding: 0; 
+text-align: center;
 width: 720px;
 font-size: 40px;
 line-height: 40px;
@@ -384,9 +457,29 @@ text-transform: uppercase;
 color: #000000;
 }
 
+.footer-social-list {
+display: flex;
+flex-wrap: wrap; 
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.footer-social-item {
+width: 21px;
+height: 18px;
+margin-right: 29px; 
+}
+
 a { 
 color:#000000; 
 text-decoration:none;
+}
+
+
+.htmlacademy-link {
+  padding-top: 42px;
+  margin: 0;
 }
 
 .about-text {
@@ -406,6 +499,7 @@ background-color: #83B3D3;
 border: 0;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
+margin-bottom: 94px;
 }
 
 
@@ -435,15 +529,23 @@ font-size: 60px;
 line-height: 77px;
 font-weight: 700;
 color: #ffffff;
+padding-top: 35px;
+margin: 0;
+padding-left: 71px;
 }
 
 .breadcrumbs {
 color: #ffffff;
+display: flex;
+margin: 0;
+padding: 0; 
+list-style-type: none;
 }
 
 .breadcrumbs-link {
 color: inherit;
 font-size: 16px;
+padding-left: 71px;
 }
 
 
@@ -451,6 +553,7 @@ font-size: 16px;
 width: 1057px;
 margin-left: 72px;
 margin-right: 72px;
+padding-bottom: 83px;
 }
 
 .catalog-filter-item {
@@ -479,9 +582,12 @@ font-weight: 700;
 line-height: 38px;
 color: #000000;
 text-transform: uppercase;
+margin-left: 71px;
+margin-top: 50px;
 }
 
 .sorting-container {
+display: flex; 
 color: #000000;
 background-color: #ffffff;
 }
@@ -495,6 +601,12 @@ flex-direction: row;
 
 .product-card-link {
 text-decoration: none;
+}
+
+.product-list {
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
 .catalog-type-hotels {
@@ -549,7 +661,18 @@ text-transform: uppercase;
 text-align: center;
 }
 
+.pagination-container {
+display: flex;
+padding: 16px; 
+background-color: #ffffff;
+}
 
+.pagination {
+display: flex;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
 
 .pagination-link {
 color: #ffffff;
@@ -557,6 +680,7 @@ background-color: #83B3D3;
 text-decoration: none;
 line-height: 16px;
 font-weight: 700;
+height: 55px;
 }
 
 .pagination-current {
@@ -567,7 +691,6 @@ background-color: #F2F2F2;
 
 .pagination-item {
 width: 55px;
-height: 55px;
 font-size: 20px;
 line-height: 25px;
 font-weight: 700;
@@ -578,6 +701,10 @@ border: 0px;
 border-radius: 4px;
 display: inline;
 margin-right: 8px;
+}
+
+.pagination-item:not(:last-child) {
+margin-right: 9px;
 }
 
 
@@ -601,6 +728,7 @@ padding: 8px 23px;
 .pagination {
 text-align: left;
 display: flex;
+padding-top: 60px;
 }
 
 .sorting {
@@ -610,7 +738,7 @@ text-align: right;
 .hotel-rating {
 font-size: 16px;
 font-weight: 400;
-color: #ffffff;
+color: #333333;
 background-color: #f2f2f2;
 text-transform: uppercase;
 padding: 8px 33px;
@@ -626,4 +754,6 @@ color: #ffffff;
 background-color: #83B3D3;
 text-transform: uppercase;
 border: 0px;
+margin-left: auto;
+margin-top: 30px;
 }
