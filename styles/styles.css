@@ -371,7 +371,7 @@ margin: 0;
 .page-footer-container {
 display: flex;
 width: 1200px;
-margin: 0 auto;
+margin: 0;
 }
 
 .search-hotel {
@@ -562,7 +562,7 @@ color: #ffffff;
 }
 
 .catalog-right-column {
-width: 1056px;
+padding: 0 72px;
 }
 
 .catalog-filter-title {
@@ -597,11 +597,55 @@ background-color: #ffffff;
 margin: 0px auto;
 display: flex;
 flex-direction: row;
+width: 340px;
+margin-right: 18px;
+margin-bottom: 10px;
 }
 
 .product-card-link {
 text-decoration: none;
 }
+
+
+.hotels-list {
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+}
+
+
+li.product-card:nth-child(3) {
+margin-right: 0;
+}
+
+.Amara {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+}
+
+.Desert {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+}
+
+.Villas {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+}
+
+.GreenTree {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+}
+
 
 .product-list {
 list-style-type: none;
@@ -614,6 +658,8 @@ font-size: 18px;
 line-height: 23px;
 font-weight: 400 ;
 color: #333333;
+width: 133px;
+height: 23px
 }
 
 .product-card-price {
@@ -621,6 +667,9 @@ font-size: 18px;
 line-height: 23px;
 font-weight: 400 ;
 color: #333333;
+width: 143px;
+height: 23px;
+margin: 0;
 }
 
 
@@ -629,6 +678,7 @@ font-weight: 700;
 font-size: 24px;
 line-height: 31px;
 color: #000000;
+margin: 16px 0;
 }
 
 
@@ -641,6 +691,8 @@ color: #ffffff;
 background-color: #83B3D3;
 border: 0;
 text-transform: uppercase;
+display: inline-block;
+margin-top: 25px;
 }
 
 
@@ -653,6 +705,8 @@ color: #ffffff;
 background-color: #7DB54F;
 border: 0;
 text-transform: uppercase;
+display: inline-block;
+margin-top: 25px;
 }
 
 
@@ -678,15 +732,13 @@ list-style-type: none;
 color: #ffffff;
 background-color: #83B3D3;
 text-decoration: none;
-line-height: 16px;
+line-height: 17px;
 font-weight: 700;
-height: 55px;
+display: block;
+padding: 19px 0;
 }
 
-.pagination-current {
-color: #242424;
-background-color: #F2F2F2;
-}
+
 
 
 .pagination-item {
@@ -696,7 +748,6 @@ line-height: 25px;
 font-weight: 700;
 text-align: center;
 color: #ffffff;
-background-color: #83B3D3;
 border: 0px;
 border-radius: 4px;
 display: inline;
@@ -707,22 +758,28 @@ margin-right: 8px;
 margin-right: 9px;
 }
 
-
 .current-page {
 color: #000000;
-background-color: #F2F2F2;
-}
+  background-color: #F2F2F2;
+  width: 55px;
+  height: 55px;
+  text-decoration: none;
+  line-height: 17px;
+  font-weight: 700;
+  display: block;
+  }
 
 
-.product-card-about {
+.product-card-about  {
 font-size: 16px;
 font-weight: 700;
 color: #ffffff;
 background-color: #756257;
 text-transform: uppercase;
-padding: 8px 23px;
+display: inline-block;
+margin-top: 25px;
+padding: 5px 23px 6px;
 }
-
 
 
 .pagination {
@@ -743,6 +800,14 @@ background-color: #f2f2f2;
 text-transform: uppercase;
 padding: 8px 33px;
 border-radius: 4px;
+display: inline-block;
+margin-top: 16px;
+margin-bottom: 20px;
+}
+
+.stars {
+width: 130px;
+height: 30px;
 }
 
 .pagination-show-more {
