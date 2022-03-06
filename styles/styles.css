@@ -45,19 +45,14 @@ overflow: hidden;
 }
 
 
-.container-main {
+.container {
 width: 1200px;
 margin-left: auto;
 margin-right: auto;
-display: inline;
+display: inline-block;
 background-color: #ffffff;
 }
 
-.container-hotels {
-width: 1200px;
-margin-left: auto;
-margin-right: auto;
-}
 
 .page-header {
 color: #000000;
@@ -594,12 +589,9 @@ background-color: #ffffff;
 
 .product-card {
 background-color: #ffffff;
-margin: 0px auto;
-display: flex;
+margin: 0 18px 10px 0;
 flex-direction: row;
 width: 340px;
-margin-right: 18px;
-margin-bottom: 10px;
 }
 
 .product-card-link {
@@ -611,6 +603,7 @@ text-decoration: none;
 display: flex;
 flex-wrap: wrap;
 padding: 0;
+list-style-type: none;
 }
 
 
@@ -618,28 +611,28 @@ li.product-card:nth-child(3) {
 margin-right: 0;
 }
 
-.Amara {
+.amara {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 padding: 20px;
 }
 
-.Desert {
+.desert {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 padding: 20px;
 }
 
-.Villas {
+.villas {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 padding: 20px;
 }
 
-.GreenTree {
+.greentree {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -659,7 +652,7 @@ line-height: 23px;
 font-weight: 400 ;
 color: #333333;
 width: 133px;
-height: 23px
+height: 23px;
 }
 
 .product-card-price {
@@ -721,12 +714,6 @@ padding: 16px;
 background-color: #ffffff;
 }
 
-.pagination {
-display: flex;
-margin: 0;
-padding: 0;
-list-style-type: none;
-}
 
 .pagination-link {
 color: #ffffff;
@@ -736,7 +723,15 @@ line-height: 17px;
 font-weight: 700;
 display: block;
 padding: 19px 0;
+border-radius: 4px;
 }
+
+
+.current-page {
+color: #000000;
+background-color: #F2F2F2;
+}
+
 
 
 
@@ -758,16 +753,6 @@ margin-right: 8px;
 margin-right: 9px;
 }
 
-.current-page {
-color: #000000;
-  background-color: #F2F2F2;
-  width: 55px;
-  height: 55px;
-  text-decoration: none;
-  line-height: 17px;
-  font-weight: 700;
-  display: block;
-  }
 
 
 .product-card-about  {
@@ -783,10 +768,15 @@ padding: 5px 23px 6px;
 
 
 .pagination {
-text-align: left;
 display: flex;
+margin: 0;
+padding: 0;
+text-align: left;
 padding-top: 60px;
+list-style-type: none;
 }
+
+
 
 .sorting {
 text-align: right;
