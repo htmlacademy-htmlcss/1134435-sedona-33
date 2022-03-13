@@ -33,9 +33,9 @@
           </a>
           </li>
           <li class="navigation-item">
-              <span class="visually-hidden">
+              <a class="visually-hidden">
                 Избранное
-              </span>
+              </a>
             <div class="navigation-favorite">12</div>
           </li>
           <li class="navigation-item">
@@ -101,22 +101,29 @@
                         </li>
                       </ul> 
                 </fieldset>
+                <div class="price">
+                  <span class="choose-price">Стоимость, ₽:</span>
+                  <table border="price-filter">
+                    <tr>
+                     <th>0 от</th>
+                     <th>9000 до</th>
+                    </tr>
+                  </table>
+                </div>
+            <div class="button-filter">
             <button class="button filter-apply" type="submit">ПРИМЕНИТЬ</button>
             <button class="filter-reset" type="reset">Сбросить</button>
+           </div>
               </form>
             </section>
         </div>
-            
-             <span class="results-all">Найдено гостиниц: 38</span>
-
-             
-             <div class="catalog-right-column">
              <div class="sorting-container">
+              <span class="results-all">Найдено гостиниц: 38</span>
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
-            </select>
+              </select>
                 <a href="#" class="button button-light">
                   <span class="visually-hidden">Показать карточки</span> 
                   </a>
@@ -127,7 +134,7 @@
                     <span class="visually-hidden">Показать список</span>
                   </a>
                 </div>
-                
+                <div class="catalog-right-column">
                   <section class="results-hotels">
                   <h2 class="visually-hidden">Результаты фильтра "Гостиница"</h2>
                   <ul class="hotels-list">
@@ -203,6 +210,8 @@
 
               <div class="catalog-pagination">
                 <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+                <div class="view">
+                <section class="button-pages">
                   <ul class="pagination">
                     <li class="pagination-item current-page">
                        <a class="pagination-link current-page" href="#">1</a>
@@ -223,14 +232,16 @@
                       <a class="pagination-link" href="#">10</a>
                     </li>
                   </ul>
-                </div>
-                <div class="sorting">
+                </section>
+                  <div class="view-pages">
+                  <p>Гостиниц на странице:</p>
                   <select class="select-view" aria-label="Гостиниц на странице:">
-                    <option value="4">Сначала дешёвые</option>
-                    <option value="8">Сначала дорогие</option>
-                    <option value="16">Сначала популярные</option>
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="16">16</option>
                  </select>
-                </div>
+                 </div>
+            </div>
         </main>
         <footer class="page-footer">
 
