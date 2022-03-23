@@ -697,21 +697,19 @@ advices-souvenirs {
 
 .modal {
 	position: relative;
-	margin: auto;
-	padding: 40px;
-	background-color: #ffffff;
+    margin: auto;
+    width: 715px;
+    background-color: #ffffff;
+	border-radius: 30px;
 }
 
-.modal-auth {
-	width: 715px;
-}
 
 
 .modal-close-button {
 	position: absolute;
 	padding: 0;
-	top: 30px;
-	right: 65px;
+	top: 55px;
+    right: 70px;
 	width: 53px;
 	height: 53px;
 	border-radius: 50%;
@@ -724,8 +722,7 @@ advices-souvenirs {
 } 
 
 .modal-title {
-	margin: 0;
-	margin-bottom: 60px;
+	margin: 62px 0 51px 68px;
 	font-family: "PT Sans", sans-serif;
 	font-size: 30px;
 	line-height: 40px;
@@ -744,8 +741,8 @@ advices-souvenirs {
 .wrong-time {
 	color: rgba(255, 87, 87, 1);
 	font-size: 16px;
-	top: 55px;
-    right: 235px;
+	top: 47px;
+    right: 138px;
 	font-weight: 400;
 	position: absolute;
 	content: "";
@@ -754,8 +751,8 @@ advices-souvenirs {
 .good-booking-time {
 	color: rgba(51, 51, 51, 1);
 	font-size: 16px;
-	top: 151px;
-    right: 188px;
+	top: 47px;
+    right: 88px;
 	font-weight: 400;
 	position: absolute;
 	content: "";
@@ -773,22 +770,38 @@ advices-souvenirs {
 .people-filter {
 	display: flex;
 	margin-bottom: 40px;
+	align-items: center;
 }
 
 .child-filter {
 	display: flex;
+	margin-right: 70px;
+	align-items: center;
 }
 
 
 
  .field-group {
-	margin: 0;
+	position: relative;
+	margin-right: 70px;
 	margin-bottom: 40px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-*/
+
+.calendar {
+	position: absolute;
+	content: "";
+	border: none;
+	display: block;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+	top: 50%;
+    transform: translate(-50%,-50%);
+	background-color: transparent;
+}
 
 
 .auth-form-user-options {
@@ -796,47 +809,92 @@ advices-souvenirs {
 	justify-content: space-between;
 	font-weight: 400;
 }
-  
-/*
-.auth-form-user-options .control-label {
-	font-weight: 400;
-}
-*/
+
   
 .auth-form .field {
 	width: 420px;
 	margin-left: 70px;
-	border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+	border-radius: 4px;
+
 }
 
-.number-input-minus {
+input#chek-out {
+    margin: 0;
+	font-weight: 700;
+    font-family: 'PT Sans';
+    font-size: 18px;
+	line-height: 40px;
+}
+
+
+input#chek-in {
+    margin: 0;
+	font-weight: 700;
+    font-family: 'PT Sans';
+    font-size: 18px;
+	line-height: 40px;
+}
+
+
+.counting {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 133px;
+	margin-left: 70px;
+	border: none;
+	background-color: rgba(242, 242, 242, 1);
+	border-radius: 4px;
+	align-items: center;
+	max-height: 50px;
+	
+}
+
+.minus {
 	width: 40px;
 	height: 40px;
 	padding-right: 10px;
 	border: none;
+	position: relative;
+	cursor: pointer;
+	background-color: transparent;
+   
 }
 
-.number-input-plus {
+.minus svg {
+	position: absolute; 
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.plus {
 	width: 40px;
 	height: 40px;
 	padding-left: 10px;
 	border: none;
+	position: relative;
+	cursor: pointer;
+	background-color: transparent;
+	
 }
 
-.number-human {
-	display: block;
-	border:none;
-	background-color: rgba(242, 242, 242, 1);
+
+.plus svg {
+	position: absolute; 
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
 }
+
 
 
 .auth-form { 
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-margin-left: 30px;
 position: relative;
+margin-left: 70px;
 }
 
 
@@ -845,11 +903,25 @@ position: relative;
 	color: #000000;
 }
   
+
 .auth-form-button {
-	width: 360px;
-	margin-bottom: 16px;
+	width: 575px;
+    background-color: rgba(131, 179, 211, 1);
+    border: none;
+    line-height: 60px;
+    border-radius: 10px;
+	text-transform: uppercase;
+	margin-bottom: 70px;
+    margin-top: 20px;
+    margin-right: 70px;
+	margin-top: 40px;
+	align-items: center;
 }
   
+.people-counting {
+	display: flex;
+    justify-content: space-between;
+}
   
 
 a {
@@ -913,37 +985,90 @@ a:active {
 }
 
 
-/*
-.control {
+.people-filter {
+	margin: 0px;
+}
+
+
+
+
+.child-count {
+	margin: 10px;
 	position: relative;
+
+}
+
+
+.clarification {
+	content: "";
+	position: absolute;
 	display: block;
-	padding-left: 36px;
+	width: 25px;
+	height: 25px;
+	top: 218px;
+    right: 233px;
+	background-color: rgba(131, 179, 211, 1);
+	text-align: center;
+	color: rgba(255, 255, 255, 1);
+	transform: translateX(-50%);
+	background-repeat: no-repeat;
+	border-radius: 50%;
+
+}
+
+
+.popover {
+	position: absolute;
+	box-sizing: border-box;
+	width: 256px;
+	top: 250px;
+	padding: 15px 18px 18px 22px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(51, 51, 51, 1);
+	min-height: 110px;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 10px;
+	line-height: 20px;
+	box-shadow: 0 15px 30px 0 rgb(0, 0, 0, 0.3);
   }
 
-  */ 
-  
-  .control-mark {
+.popover::before {
+  width: 0; 
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #24375B;
+  }
+
+.control {
 	position: relative;
-	top: 2px;
-	left: 0;
+    display: flex;
+	padding-right: 10px;
+}
+
+.control .control-mark:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 12px;
+	display: block;
 	width: 20px;
 	height: 20px;
-	background-color: #ffffff;
-	color: rgba(63, 94, 114, 1);
+	background-color: rgba(255, 255, 255, 1);
+	transform: translateX(-50%);
+	background-repeat: no-repeat;
+	background-position: center bottom;
 	border-radius: 4px;
   }
 
-  .control:hover .control-mark {
-	border-color: rgba(255, 255, 255, 0.6);
-  }
-  
-  
-  .control-input:disabled + .control-mark {
-	border-color: #242424;
-  }
-  
 
-  .control-input[type="checkbox"]:checked + .control-mark {
+
+
+
+
+
+  .control-input[type="checkbox"]:checked .control-mark {
 	position: absolute;
 	background-image: url("../images/chek.svg");
 	top: 50%;
@@ -952,23 +1077,10 @@ a:active {
 	content: "";
 	background-repeat: no-repeat;
   }
-  
 
 
 
-  .control-input[type="radio"]:checked + .control-mark::before {
-	position: absolute;
-	color: rgba(63, 94, 114, 1);
-	width: 10px;
-	height: 10px;
-	top: 4px;
-	left: 4px;
-	width: 20px;
-	height: 20px;
-	background-color: #242424;
-	border-radius: 50%;
-	content: "";
-  }
+
 
   .control-input[type="radio"] + .control-mark {
 	border-radius: 50%;
@@ -1164,7 +1276,7 @@ a:active {
 }
 
 .control-label {
-	font-weight: 700;
+	margin-left: 39px;
 }
 
 .select-control {
