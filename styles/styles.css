@@ -56,6 +56,9 @@ body {
 	background-color: #ffffff;
 }
 
+
+/* потолок */
+
 .navigation {
 	display: flex;
 	width: 1200px;
@@ -200,8 +203,26 @@ body {
 	position: relative;
 }
 
+
+
+
+/* главная */ 
+
+
 .main-container {
 	flex-grow: 1;
+}
+
+.main-title {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 63px;
+	color: #000000;
+	margin: 0;
+	position: relative;
 }
 
 .page-container {
@@ -214,6 +235,49 @@ body {
 	margin: 0 auto;
 	padding-top: 51px;
 	padding-bottom: 83px;
+}
+
+/* перечисление  плюсов */ 
+
+
+.reasons-top {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+	padding-bottom: 60px;
+	margin-top: 31px;
+	margin-bottom: 0;
+}
+
+.appointment {
+	width: 1200px;
+	margin: 0 0;
+	justify-content: space-between;
+	flex-direction: row;
+	text-align: center;
+	align-items: stretch;
+}
+
+.appointment-title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	text-align: center;
+	color: #000000;
+	text-transform: uppercase;
+	margin-top: 91px;
+	margin-bottom: 0;
+}
+
+.appointment-text {
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	color: #333333;
+	padding-top: 29px;
+	padding-bottom: 56px;
+	margin: 0;
 }
 
 .reasons-title {
@@ -230,6 +294,13 @@ body {
 .reason-block {
 	color: #ffffff;
 }
+
+.reasons-description {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
 
 .advices-title {
 	font-size: 24px;
@@ -398,11 +469,10 @@ advices-souvenirs {
 	text-align: center;
 }
 
-.reasons-description {
-	display: flex;
-	justify-content: center;
-	margin-top: 30px;
-}
+
+
+/* ПОДПИСКА */ 
+
 
 .button {
 	font-family: inherit;
@@ -429,57 +499,8 @@ advices-souvenirs {
 	outline: none;
 }
 
-.main-title {
-	font-size: 30px;
-	line-height: 36px;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-align: center;
-	padding-top: 63px;
-	color: #000000;
-	margin: 0;
-	position: relative;
-}
 
-.reasons-top {
-	font-size: 22px;
-	font-weight: 400;
-	line-height: 36px;
-	text-align: center;
-	padding-bottom: 60px;
-	margin-top: 31px;
-	margin-bottom: 0;
-}
-
-.appointment {
-	width: 1200px;
-	margin: 0 0;
-	justify-content: space-between;
-	flex-direction: row;
-	text-align: center;
-	align-items: stretch;
-}
-
-.appointment-title {
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 36px;
-	text-align: center;
-	color: #000000;
-	text-transform: uppercase;
-	margin-top: 91px;
-	margin-bottom: 0;
-}
-
-.appointment-text {
-	font-size: 22px;
-	line-height: 26px;
-	text-align: center;
-	color: #333333;
-	padding-top: 29px;
-	padding-bottom: 56px;
-	margin: 0;
-}
+/* ПОДВАЛ */ 
 
 .page-footer-container {
 	display: flex;
@@ -694,16 +715,32 @@ advices-souvenirs {
 	width: 53px;
 	height: 53px;
 	border-radius: 50%;
-	background-color: rgba(242, 242, 242, 1);
+	background-color: #F2F2F2;
 	border: none;
-	background-image: url("../images/close.svg");
-	background-repeat: no-repeat;
-	background-position: center;
 	cursor: pointer;
 }
 
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+	background-color: #E6E6E6;
+	border: 3px solid rgba(131, 179, 211, 1)
+}
+
+
+.modal-close-button:active {
+	background-color: background: rgba(230, 230, 230, 0.3);
+}
+
+.modal-close-button:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+
 .modal-title {
-	margin: 62px 0 51px 68px;
+	margin: 62px 0 58px 68px;
 	font-family: "PT Sans", sans-serif;
 	font-size: 30px;
 	line-height: 40px;
@@ -714,13 +751,15 @@ advices-souvenirs {
 
 .auth-form-field {
 	position: relative;
+
 }
+
 
 .wrong-time {
 	color: rgba(255, 87, 87, 1);
 	font-size: 16px;
-	top: 47px;
-	right: 138px;
+	top: 42px;
+    right: 140px;
 	font-weight: 400;
 	position: absolute;
 	content: "";
@@ -729,8 +768,8 @@ advices-souvenirs {
 .good-booking-time {
 	color: rgba(51, 51, 51, 1);
 	font-size: 16px;
-	top: 47px;
-	right: 88px;
+	top: 43px;
+    right: 90px;
 	font-weight: 400;
 	position: absolute;
 	content: "";
@@ -760,7 +799,6 @@ advices-souvenirs {
 .field-group {
 	position: relative;
 	margin-right: 70px;
-	margin-bottom: 40px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -771,12 +809,15 @@ advices-souvenirs {
 	content: "";
 	border: none;
 	display: block;
-	top: 0px;
+	top: 25px;
 	right: 0px;
 	cursor: pointer;
-	top: 50%;
 	transform: translate(-50%, -50%);
 	background-color: transparent;
+}
+
+.data-sorting {
+	padding-bottom: 39px;
 }
 
 .auth-form-user-options {
@@ -785,42 +826,56 @@ advices-souvenirs {
 	font-weight: 400;
 }
 
+
 .auth-form .field {
 	width: 420px;
-	margin-left: 70px;
+    height: 50px;
 	border-radius: 4px;
+	font-size: 18px;
+    font-weight: 700;
+	margin-bottom: 40px;
 }
 
-input#chek-out {
-	margin: 0;
-	font-weight: 700;
-	font-family: 'PT Sans';
-	font-size: 18px;
-	line-height: 40px;
+.auth-form .field:hover {
+	background-color: rgba(230, 230, 230, 1);
 }
 
-input#chek-in {
-	margin: 0;
-	font-weight: 700;
-	font-family: 'PT Sans';
-	font-size: 18px;
-	line-height: 40px;
+.auth-form .field:focus {
+	background-color: rgba(230, 230, 230, 1);
 }
+
+.auth-form .field:active {
+	background-color: #FFFFFF;
+	border: 2px solid #000000;
+	border-inline: none;
+}
+
 
 .counting {
 	display: flex;
 	justify-content: space-between;
 	width: 133px;
+	height: 50px;
 	border: none;
 	background-color: rgba(242, 242, 242, 1);
 	border-radius: 4px;
 	align-items: center;
-	max-height: 50px;
 }
 
 label.people-count {
     margin-right: 70px;
 }
+
+.amount {
+	border: none;
+    width: 24px;
+    background-color: #F2F2F2;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000000;
+}
+
 
 .minus {
 	width: 40px;
@@ -830,6 +885,8 @@ label.people-count {
 	position: relative;
 	cursor: pointer;
 	background-color: transparent;
+	border: 3px solid transparent;
+	border-radius: 4px;
 }
 
 .minus svg {
@@ -840,6 +897,10 @@ label.people-count {
 	transform: translate(-50%, -50%);
 }
 
+.minus:focus {
+	border-color: #83B3D3;
+}
+
 .plus {
 	width: 40px;
 	height: 40px;
@@ -848,6 +909,8 @@ label.people-count {
 	position: relative;
 	cursor: pointer;
 	background-color: transparent;
+	border: 3px solid transparent;
+	border-radius: 4px;
 }
 
 .plus svg {
@@ -858,8 +921,21 @@ label.people-count {
 	transform: translate(-50%, -50%);
 }
 
+.plus:hover svg {
+	fill: #000000;
+}
+
+.plus:focus svg {
+	fill: #000000;
+}
+
+
+.plus:focus {
+	border-color: #83B3D3;
+}
+
+
 .tooltip {
-	position: absolute;
 	margin-top: 4px;
 	margin-left: 2px;
 	width: 256px;
@@ -868,18 +944,19 @@ label.people-count {
 
 .tooltip-toggle {
 	border: none;
-	background-color: transparent;
-	padding: 0;
-	margin: 0;
+	background-color: #83B3D3;
+	color: #ffffff;
 	display: block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	text-align: center;
 }
 
-.tooltip-icon {
-	width: 100%;
-	height: 100%;
-	color: #83B3D3;
-	display: block;
+.tooltip-toggle:active {
+	background-color: #68A2CA;
 }
+
 
 .tooltip-text {
 	position: absolute;
@@ -918,12 +995,11 @@ label.people-count {
 
 .form-label-icon {
 	position: relative;
-	padding-right: 16px;
+	padding-right: 7px;
+	margin-left: 20px;
 }
 
-.tooltip-toggle:hover .tooltip-icon {
-	color: rgba(104, 162, 202, 1);
-}
+
 
 .tooltip-toggle:hover+.tooltip-text,
 .tooltip-toggle:focus+.tooltip-text {
@@ -1022,8 +1098,8 @@ a:active {
 
 .child-count {
 	position: relative;
-	margin-right: 50px;
-	margin-left: 50px;
+	margin-right: 49px;
+    margin-left: 37px;
 }
 
 .clarification {
@@ -1032,14 +1108,11 @@ a:active {
 	display: block;
 	width: 25px;
 	height: 25px;
-	top: 0px;
-	right: 10px;
-	background-color: rgba(131, 179, 211, 1);
+	top: 4px;
+	right: 22px;
 	text-align: center;
 	color: rgba(255, 255, 255, 1);
-	transform: translateX(-50%);
 	background-repeat: no-repeat;
-	border-radius: 50%;
 }
 
 
@@ -1059,29 +1132,43 @@ a:active {
 	width: 20px;
 	height: 20px;
 	background-color: rgba(255, 255, 255, 1);
-	transform: translateX(-50%);
-	background-repeat: no-repeat;
-	background-position: center bottom;
 	border-radius: 4px;
 }
 
-.control-input[type="checkbox"]:checked .control-mark {
+
+
+.control-input:checked[type="checkbox"]+ .control-mark::before  {
 	position: absolute;
 	background-image: url("../images/chek.svg");
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	content: "";
 	background-repeat: no-repeat;
 }
 
-.control-input[type="radio"]+.control-mark {
+
+
+.radio-mark::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 12px;
+	display: block;
+	border-radius: 50%;
+	color: rgba(63, 94, 114, 1);
+	width: 10px;
+	height: 10px;
+
+}
+
+
+
+.control-input:checked[type="radio"]+ .radio-mark::before {
 	border-radius: 50%;
 	color: rgba(63, 94, 114, 1);
 	width: 10px;
 	height: 10px;
 	border-color: rgba(255, 255, 255, 1);
 }
+
 
 .range-scale {
 	position: relative;
@@ -1209,11 +1296,6 @@ a:active {
 	justify-content: space-between;
 }
 
-.control-input {
-	margin-right: 8px;
-	width: 20px;
-	height: 20px;
-}
 
 .catalog-filter-item {
 	line-height: 23px;
